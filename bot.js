@@ -4,11 +4,13 @@ const axios = require('axios');
 const fs = require('fs');
 
 // ================= AYARLAR =================
-const TOKEN = "MTQ4NjA4NDQ2NjQwODU1ODY1Mw.GwstVE.ymhy4vY2RNIaigKbeHlIDkHlnQByjr4FLVuePQ";
-const CLIENT_ID = "1486084466408558653";
-const GUILD_ID = "1458160867538501882"; 
-const API_KEY = "12345"; // Roblox'taki key ile aynı
+// Artık şifreleri buraya YAZMIYORUZ! Render'ın gizli kasasından çekeceğiz.
+const TOKEN = process.env.TOKEN;
+const CLIENT_ID = process.env.CLIENT_ID;
+const GUILD_ID = process.env.GUILD_ID; 
+const API_KEY = "12345"; // Roblox'taki key ile aynı (Bu kalabilir)
 const PORT = process.env.PORT || 3000;
+// ===========================================
 
 // Rütbeleri en yüksekten en düşüğe doğru sıraladık (İlk bulduğunu verir)
 const RANKS = [
